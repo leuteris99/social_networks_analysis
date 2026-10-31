@@ -1,0 +1,90 @@
+T1: 2008-08-01 05:17:57 -> 2008-09-01 03:13:23.200000048  |V|=2152  |E|=13167
+T2: 2008-09-01 03:13:23.200000048 -> 2008-10-02 01:08:49.400000095  |V|=9590  |E|=55626
+T3: 2008-10-02 01:08:49.400000095 -> 2008-11-01 23:04:15.599999905  |V|=9349  |E|=45581
+T4: 2008-11-01 23:04:15.599999905 -> 2008-12-02 20:59:41.799999952  |V|=9207  |E|=35142
+T5: 2008-12-02 20:59:41.799999952 -> 2009-01-02 18:55:08  |V|=8949  |E|=32099
+computing centralities for T1
+computing centralities for T2
+computing centralities for T3
+computing centralities for T4
+computing centralities for T5
+(T1,T2): |V*|=1719  |E*_train|=11520  |E*_test|=6048
+(T2,T3): |V*|=5697  |E*_train|=37889  |E*_test|=25097
+(T3,T4): |V*|=5447  |E*_train|=30308  |E*_test|=18505
+(T4,T5): |V*|=5145  |E*_train|=22140  |E*_test|=16929
+
+(T1,T2)  |E0|=1476621  |E_train|=11520  |E_test|=6048
+training ranking:
+          intervals  train ACC
+measure                      
+GD               1   1.000000
+A             2723   0.994359
+PA             129   0.992360
+JC             150   0.992336
+CN               5   0.992222
+testing ranking:
+          test ACC
+measure          
+CN       0.995861
+JC       0.995763
+PA       0.995720
+A        0.994007
+GD       0.988621
+
+(T2,T3)  |E0|=16225056  |E_train|=37889  |E_test|=25097
+training ranking:
+          intervals  train ACC
+measure                      
+GD               1   1.000000
+A             4015   0.997944
+JC             175   0.997678
+PA             129   0.997678
+CN               6   0.997666
+testing ranking:
+          test ACC
+measure          
+CN       0.998449
+JC       0.998440
+PA       0.998438
+A        0.998207
+GD       0.996221
+
+(T3,T4)  |E0|=14832181  |E_train|=30308  |E_test|=18505
+training ranking:
+          intervals  train ACC
+measure                      
+GD               1   1.000000
+A             2543   0.998145
+JC             133   0.997967
+PA              91   0.997965
+CN               2   0.997957
+testing ranking:
+          test ACC
+measure          
+CN       0.998752
+PA       0.998746
+JC       0.998745
+A        0.998595
+GD       0.996816
+
+(T4,T5)  |E0|=13232940  |E_train|=22140  |E_test|=16929
+training ranking:
+          intervals  train ACC
+measure                      
+GD               1   1.000000
+A             1391   0.998442
+PA             103   0.998337
+JC              83   0.998334
+CN               1   0.998327
+testing ranking:
+          test ACC
+measure          
+CN       0.998721
+JC       0.998716
+PA       0.998712
+A        0.998631
+GD       0.997151
+
+real	4m32.750s
+user	4m36.078s
+sys	0m1.949s
